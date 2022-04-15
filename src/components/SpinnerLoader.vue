@@ -9,6 +9,10 @@ defineProps({
 });
 </script>
 
+<script lang="ts">
+export default {};
+</script>
+
 <template>
   <div v-if="loading" class="container">
     <div class="loader">&nbsp;</div>

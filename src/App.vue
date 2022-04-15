@@ -1,27 +1,38 @@
 <template>
   <Suspense>
     <MainLayout />
-    <template #fallback><Loader /></template>
+    <template #fallback><SpinnerLoader /></template>
   </Suspense>
 </template>
 
-<script lang="ts">
-import { defineComponent } from "vue";
+<script setup lang="ts">
 import MainLayout from "@/layouts/MainLayout.vue";
-import Loader from "@/components/Loader.vue";
+import SpinnerLoader from "@/components/SpinnerLoader.vue";
+import { useLocation } from "./common/useLocation";
 
-export default defineComponent({
-  name: "App",
-  components: {
-    MainLayout,
-    Loader,
-  },
-});
+useLocation();
+</script>
+
+<script lang="ts">
+export default {};
 </script>
 
 <style>
 :root {
-  /* variables */
+  /* colors */
+  --transparent-gray: rgba(128, 128, 128, 0.4);
+  --font-color: rgba(48, 48, 48);
+  --font-color-hover: rgba(160, 180, 170);
+  --font-color-active: rgba(140, 160, 155);
+
+  /* sizes */
+  --header-height: 96px;
+  --header-min-width: 440px;
+  /* fonts */
+  --header-title-font-size: 26px;
+  --header-title-font-weight: 400;
+  --header-buttons-font-size: 16px;
+  --header-buttons-font-weight: 400;
 }
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
