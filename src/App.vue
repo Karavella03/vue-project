@@ -1,21 +1,24 @@
-<template>
-  <Suspense>
-    <MainLayout />
-    <template #fallback><SpinnerLoader /></template>
-  </Suspense>
-</template>
-
 <script setup lang="ts">
 import MainLayout from "@/layouts/MainLayout.vue";
 import SpinnerLoader from "@/components/SpinnerLoader.vue";
+
 import { useLocation } from "./common/useLocation";
+import { useRouter } from "./common/useRouter";
 
 useLocation();
+const { CurrentPage } = useRouter();
 </script>
 
 <script lang="ts">
 export default {};
 </script>
+
+<template>
+  <Suspense>
+    <MainLayout><CurrentPage /></MainLayout>
+    <template #fallback><SpinnerLoader /></template>
+  </Suspense>
+</template>
 
 <style>
 :root {

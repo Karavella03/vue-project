@@ -1,12 +1,10 @@
 <script setup lang="ts">
-import { computed } from "@vue/runtime-core";
-import { useStore } from "vuex";
 import { HEADER_BUTTONS } from "@/constants/headerButtons";
 
 import HeaderButton from "./HeaderButton.vue";
+import { useRouter } from "@/common/useRouter";
 
-const store = useStore();
-const hash = computed(() => store.state.locationHash);
+const { hash, redirect } = useRouter();
 </script>
 
 <script lang="ts">
@@ -23,8 +21,10 @@ export default {};
         class="HeaderButtonItem"
       >
         <HeaderButton
-          @click="item.onClick"
-          :href="item.route"
+          @click="
+            item.route && redirect(item.route);
+            item.onClick && item.onClick();
+          "
           :active="item.route === hash"
           >{{ item.title }}</HeaderButton
         >

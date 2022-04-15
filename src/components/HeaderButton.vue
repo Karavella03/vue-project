@@ -6,10 +6,6 @@ defineProps({
     default: false,
     type: Boolean,
   },
-  href: {
-    type: String,
-    required: false,
-  },
 });
 </script>
 
@@ -20,7 +16,6 @@ export default {};
 <template>
   <a
     @click="$emit('onclick')"
-    :href="`#${href}`"
     class="HeaderButtonContainer"
     :class="{ HeaderButtonActive: active }"
   >
