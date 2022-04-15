@@ -1,8 +1,10 @@
 <script setup lang="ts">
+import HeaderComponent from "@/components/HeaderComponent.vue";
+
 const data = await new Promise((res) => {
   setTimeout(() => {
     res("Loaded");
-  }, 3000);
+  }, 500);
 });
 </script>
 
@@ -12,6 +14,7 @@ export default {};
 
 <template>
   <div class="container">
+    <HeaderComponent />
     {{ data }}
   </div>
 </template>
