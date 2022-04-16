@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { HEADER_BUTTONS } from "@/constants/headerButtons";
 
-import HeaderButton from "./HeaderButton.vue";
+import HeaderButton from "../HeaderButton";
 import { useRouter } from "@/common/useRouter";
 
 const { hash, redirect } = useRouter();
@@ -17,7 +17,7 @@ export default {};
     <ul class="HeaderButtonsList">
       <li
         v-for="item in HEADER_BUTTONS"
-        :key="item.title"
+        :key="item.title.toString()"
         class="HeaderButtonItem"
       >
         <HeaderButton

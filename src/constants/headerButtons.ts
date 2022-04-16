@@ -1,5 +1,5 @@
 import { ref } from 'vue';
-import { IHeaderButton } from '@/types/HeaderButton';
+import { IHeaderButton } from '@/components/HeaderButton/types';
 
 import { RoutesEnum } from './routes';
 

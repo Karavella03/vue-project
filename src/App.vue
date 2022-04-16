@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import MainLayout from "@/layouts/MainLayout.vue";
-import SpinnerLoader from "@/components/SpinnerLoader.vue";
+import SpinnerLoader from "@/components/SpinnerLoader";
 
 import { useLocation } from "./common/useLocation";
 import { useRouter } from "./common/useRouter";
