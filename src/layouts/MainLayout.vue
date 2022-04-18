@@ -19,6 +19,12 @@ export default {};
   display: flex;
   flex-direction: column;
   align-items: center;
+  min-height: var(--main-layout-min-height);
+  min-width: var(--main-layout-min-width);
+  max-width: var(--main-layout-max-width);
+  width: var(--main-layout-width);
+  margin-inline: auto;
+  background-color: var(--main-layout-background);
 }
 </style>
 

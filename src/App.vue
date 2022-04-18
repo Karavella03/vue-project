@@ -27,10 +27,20 @@ export default {};
   --font-color: rgba(48, 48, 48);
   --font-color-hover: rgba(160, 180, 170);
   --font-color-active: rgba(140, 160, 155);
-
+  --main-layout-background: rgba(255, 255, 255);
+  --app-background: rgba(250, 250, 250);
+  --header-border-color: none;
+  --box-shadow-color: #9b9faa;
+  --box-shadow: 3px 3px 5px -1px var(--box-shadow-color);
   /* sizes */
   --header-height: 96px;
-  --header-min-width: 440px;
+  --header-min-width: 720px;
+  --footer-height: 64px;
+  --main-layout-min-width: 720px;
+  --main-layout-max-width: 1440px;
+  --main-layout-width: 90vw;
+  --main-layout-min-height: 100vh;
+  --default-spacing: 8px;
   /* fonts */
   --header-title-font-size: 26px;
   --header-title-font-weight: 400;
@@ -42,6 +52,8 @@ export default {};
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   min-height: 100vh;
+  height: 1px;
+  background-color: var(--app-background);
 }
 * {
   box-sizing: border-box;

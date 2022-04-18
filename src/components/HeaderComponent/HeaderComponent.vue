@@ -42,7 +42,8 @@ export default {};
   height: var(--header-height);
   min-width: var(--header-min-width);
   width: 100%;
-  padding-inline: 48px;
+  padding-inline: calc(var(--default-spacing) * 6);
+  border-bottom: 1px solid var(--header-border-color);
 }
 .HeaderTitle {
   font-size: var(--header-title-font-size);

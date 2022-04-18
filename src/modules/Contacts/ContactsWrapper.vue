@@ -1,8 +1,9 @@
 <script setup lang="ts">
+import ViewContainer from "@/components/ViewContainer";
 </script>
 
 <script lang="ts">
 export default {};
 </script>
 
-<template>Contacts</template>
+<template><ViewContainer>Contacts</ViewContainer></template>

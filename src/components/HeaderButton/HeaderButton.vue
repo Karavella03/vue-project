@@ -26,7 +26,7 @@ export default {};
 
 <style scoped>
 .HeaderButtonContainer {
-  padding-inline: 20px;
+  padding-inline: calc(var(--default-spacing) * 3);
   line-height: 50px;
   cursor: pointer;
   color: var(--font-color);
