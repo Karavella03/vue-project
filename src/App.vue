@@ -29,23 +29,26 @@ export default {};
   --font-color-active: rgba(140, 160, 155);
   --main-layout-background: rgba(255, 255, 255);
   --app-background: rgba(250, 250, 250);
+  --header-background: var(--main-layout-background);
   --header-border-color: none;
+  --footer-border-color: var(--header-border-color);
   --box-shadow-color: #9b9faa;
   --box-shadow: 3px 3px 5px -1px var(--box-shadow-color);
   /* sizes */
-  --header-height: 96px;
-  --header-min-width: 720px;
-  --footer-height: 64px;
   --main-layout-min-width: 720px;
   --main-layout-max-width: 1440px;
   --main-layout-width: 90vw;
   --main-layout-min-height: 100vh;
+  --header-height: 96px;
+  --footer-height: 64px;
   --default-spacing: 8px;
   /* fonts */
   --header-title-font-size: 26px;
   --header-title-font-weight: 400;
   --header-buttons-font-size: 16px;
   --header-buttons-font-weight: 400;
+  --footer-paragraph-font-size: 16px;
+  --footer-paragraph-font-weight: 400;
 }
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;

@@ -40,10 +40,12 @@ export default {};
   flex-direction: row;
   align-items: center;
   height: var(--header-height);
-  min-width: var(--header-min-width);
-  width: 100%;
+  min-width: var(--main-layout-min-width);
+  max-width: var(--main-layout-max-width);
+  width: var(--main-layout-width);
   padding-inline: calc(var(--default-spacing) * 6);
   border-bottom: 1px solid var(--header-border-color);
+  background-color: var(--header-background);
 }
 .HeaderTitle {
   font-size: var(--header-title-font-size);

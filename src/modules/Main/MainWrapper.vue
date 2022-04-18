@@ -20,6 +20,6 @@ export default {};
 .MainWrapperPicture {
   width: 100%;
   object-fit: cover;
-  height: 720px;
+  height: 1440px;
 }
 </style>

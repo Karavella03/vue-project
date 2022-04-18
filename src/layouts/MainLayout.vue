@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import HeaderComponent from "@/components/HeaderComponent";
+import FooterComponent from "@/components/FooterComponent/FooterComponent.vue";
 </script>
 
 <script lang="ts">
@@ -8,8 +9,9 @@ export default {};
 
 <template>
   <div class="container">
-    <HeaderComponent />
+    <HeaderComponent class="MainLayoutHeader" />
     <slot></slot>
+    <FooterComponent />
   </div>
 </template>
 
@@ -25,6 +27,11 @@ export default {};
   width: var(--main-layout-width);
   margin-inline: auto;
   background-color: var(--main-layout-background);
+  padding-top: var(--header-height);
+}
+.MainLayoutHeader {
+  position: fixed;
+  top: 0;
 }
 </style>
 
