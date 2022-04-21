@@ -11,7 +11,7 @@ export interface IUseRouter {
 
 export const useRouter = (): IUseRouter => {
   const store = useStore<State>();
-  const hash = computed(() => store.state.locationHash);
+  const hash = computed(() => store.state.locationHash.toLowerCase());
   const CurrentPage = computed(() => {
     if (hash.value in RouterMap) {
       return RouterMap[hash.value as RoutesEnum];

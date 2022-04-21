@@ -9,6 +9,10 @@ export const HEADER_BUTTONS: IHeaderButton[] = [
     route: RoutesEnum.MAIN,
   },
   {
+    title: 'Блог',
+    route: RoutesEnum.BLOG,
+  },
+  {
     title: 'Контакты',
     route: RoutesEnum.CONTACTS,
   },
