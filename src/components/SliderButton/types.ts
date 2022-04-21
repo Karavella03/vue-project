@@ -10,6 +10,7 @@ export interface ISliderTextOptions {
   title: string;
   vertical: TextPosition;
   horizontal: TextPosition;
+  color?: string;
 }
 
 export type TextPosition = 'start' | 'end' | 'center';

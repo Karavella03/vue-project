@@ -2,11 +2,12 @@
 import { computed, defineProps, PropType } from 'vue';
 import { ref } from '@vue/reactivity';
 
+import { OFFSET } from '@/constants/slider';
+
 import SliderButton from '../SliderButton';
 import SliderItem from '../SliderItem';
 import { ISliderItem } from '../SliderItem/types';
 import { ButtonDirection } from '../SliderButton/types';
-import { OFFSET } from '@/constants/slider';
 
 const props = defineProps({
   sliderItems: {
@@ -62,6 +63,7 @@ export default {};
         :key="`${slide.value.fileName}-${index}`"
         :slide="slide.value"
         :position="position"
+        @click="slide.value.onClick"
       />
     </div>
     <SliderButton

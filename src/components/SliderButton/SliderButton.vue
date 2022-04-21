@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { defineProps, PropType } from 'vue';
+
 import { ButtonDirection } from './types';
 
 defineProps({

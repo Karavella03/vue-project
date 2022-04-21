@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import { throttle } from '@/common/throttle';
 import {
   computed,
   defineProps,
@@ -10,6 +9,9 @@ import {
   watch,
 } from 'vue';
 
+import { throttle } from '@/common/throttle';
+
+import SliderDescription from '../SliderDescription';
 import { ISliderItem } from './types';
 
 const props = defineProps({
@@ -67,7 +69,9 @@ export default {};
       SliderItemContainerClickable: slide.onClick,
     }"
     @click="slide.onClick"
-  ></div>
+  >
+    <SliderDescription :head="slide.head" :description="slide.description" />
+  </div>
 </template>
 
 <style scoped>

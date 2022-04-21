@@ -63,6 +63,8 @@ export default {};
   --header-buttons-font-weight: 400;
   --footer-paragraph-font-size: 16px;
   --footer-paragraph-font-weight: 400;
+  --slider-item-description-font-size: 54px;
+  --slider-item-head-font-size: 96px;
 }
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
