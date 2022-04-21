@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import MainLayout from "@/layouts/MainLayout.vue";
-import SpinnerLoader from "@/components/SpinnerLoader";
+import MainLayout from '@/layouts/MainLayout.vue';
+import SpinnerLoader from '@/components/SpinnerLoader';
 
-import { useLocation } from "./common/useLocation";
-import { useRouter } from "./common/useRouter";
+import { useLocation } from './common/useLocation';
+import { useRouter } from './common/useRouter';
 
 useLocation();
 const { CurrentPage } = useRouter();
@@ -34,6 +34,9 @@ export default {};
   --footer-border-color: var(--header-border-color);
   --box-shadow-color: #9b9faa;
   --box-shadow: 3px 3px 5px -1px var(--box-shadow-color);
+  --slider-button-color: rgba(128, 128, 128, 0.2);
+  --slider-button-hover-color: rgba(160, 180, 170, 0.1);
+  --slider-arrow-color: rgba(161, 190, 174, 0.3);
   /* sizes */
   --main-layout-min-width: 720px;
   --main-layout-max-width: 1440px;
@@ -42,6 +45,17 @@ export default {};
   --header-height: 96px;
   --footer-height: 64px;
   --default-spacing: 8px;
+  --slider-width: calc(
+    var(--main-layout-width) - (var(--default-spacing) * 6 * 2)
+  );
+  --slider-min-width: calc(
+    var(--main-layout-min-width) - (var(--default-spacing) * 6 * 2)
+  );
+  --slider-max-width: calc(
+    var(--main-layout-max-width) - (var(--default-spacing) * 6 * 2)
+  );
+  --slider-button-width: 128px;
+  --slider-height: 720px;
   /* fonts */
   --header-title-font-size: 26px;
   --header-title-font-weight: 400;
