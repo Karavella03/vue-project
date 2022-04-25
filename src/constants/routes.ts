@@ -1,5 +1,4 @@
-import { Component } from 'vue';
-import Contacts from '@/modules/Contacts';
+import { Component, defineAsyncComponent } from 'vue';
 import Main from '@/modules/Main';
 import Blog from '@/modules/Blog';
 
@@ -14,7 +13,9 @@ export type RouterMap = {
 };
 
 export const RouterMap: RouterMap = {
-  [RoutesEnum.CONTACTS]: Contacts,
-  [RoutesEnum.MAIN]: Main,
-  [RoutesEnum.BLOG]: Blog,
+  [RoutesEnum.CONTACTS]: defineAsyncComponent(
+    () => import('@/modules/Contacts')
+  ),
+  [RoutesEnum.MAIN]: defineAsyncComponent(() => import('@/modules/Main')),
+  [RoutesEnum.BLOG]: defineAsyncComponent(() => import('@/modules/Blog')),
 };
