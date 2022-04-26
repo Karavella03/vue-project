@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import { HEADER_BUTTONS } from '@/constants/headerButtons';
+import { useRouter } from '@/modules/Router';
 
 import HeaderButton from '../HeaderButton';
-import { useRouter } from '@/common/useRouter';
 
 const { path, redirect } = useRouter();
 </script>

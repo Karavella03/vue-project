@@ -1,7 +1,8 @@
-import { IRouter } from '@/components/RouterProvider/interfaces';
-import { ROUTER_KEY } from '@/constants/injectionKeys';
-import { RouterMap, RoutesEnum } from '@/constants/routes';
 import { ref, provide, computed, onMounted } from 'vue';
+
+import { IRouter } from '@/modules/Router/interfaces/interfaces';
+import { ROUTER_KEY } from '@/modules/Router/constants/injectionKeys';
+import { RouterMap, RoutesEnum } from '@/modules/Router/constants/routes';
 
 export const useLocation = () => {
   const path = ref<string>(RoutesEnum.MAIN);

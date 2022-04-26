@@ -1,5 +1,6 @@
 import { Component } from 'vue';
-import { RoutesEnum } from '@/constants/routes';
+
+import { RoutesEnum } from '@/modules/Router';
 
 export interface IHeaderButton {
   title: string | Component;

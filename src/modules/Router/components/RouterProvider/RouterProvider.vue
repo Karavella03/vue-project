@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { useLocation } from '@/common/useLocation';
+import { useLocation } from '@/modules/Router/common/useLocation';
 useLocation();
 </script>
 
@@ -8,5 +8,5 @@ export default {};
 </script>
 
 <template>
-  <slot></slot>
+  <slot />
 </template>

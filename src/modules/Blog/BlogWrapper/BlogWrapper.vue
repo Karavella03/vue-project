@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import ViewContainer from '@/components/ViewContainer';
-import { useRouter } from '@/common/useRouter';
-import { RoutesEnum } from '@/constants/routes';
+import { useRouter, RoutesEnum } from '@/modules/Router';
 
 const router = useRouter();
 </script>

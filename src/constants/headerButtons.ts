@@ -1,7 +1,5 @@
-import { ref } from 'vue';
 import { IHeaderButton } from '@/components/HeaderButton/types';
-
-import { RoutesEnum } from './routes';
+import { RoutesEnum } from '@/modules/Router';
 
 export const HEADER_BUTTONS: IHeaderButton[] = [
   {

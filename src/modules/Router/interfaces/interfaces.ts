@@ -1,5 +1,6 @@
 import { Component, ComputedRef, Ref } from 'vue';
-import { RoutesEnum } from '@/constants/routes';
+
+import { RoutesEnum } from '@/modules/Router/constants/routes';
 
 export interface IRouter {
   path: Ref<string>;

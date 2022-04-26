@@ -1,2 +1,2 @@
-import BlogWrapper from './BlogWrapper.vue';
+import BlogWrapper from './BlogWrapper';
 export default BlogWrapper;

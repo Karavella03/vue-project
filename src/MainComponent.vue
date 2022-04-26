@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import MainLayout from '@/layouts/MainLayout.vue';
-
-import { useRouter } from './common/useRouter';
+import { useRouter } from '@/modules/Router';
 
 const { CurrentPage } = useRouter();
 </script>
