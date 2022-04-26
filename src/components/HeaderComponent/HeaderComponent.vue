@@ -1,10 +1,10 @@
 <script setup lang="ts">
-import { HEADER_BUTTONS } from "@/constants/headerButtons";
+import { HEADER_BUTTONS } from '@/constants/headerButtons';
 
-import HeaderButton from "../HeaderButton";
-import { useRouter } from "@/common/useRouter";
+import HeaderButton from '../HeaderButton';
+import { useRouter } from '@/common/useRouter';
 
-const { hash, redirect } = useRouter();
+const { path, redirect } = useRouter();
 </script>
 
 <script lang="ts">
@@ -25,14 +25,13 @@ export default {};
             item.route && redirect(item.route);
             item.onClick && item.onClick();
           "
-          :active="item.route === hash"
+          :active="item.route === path"
           >{{ item.title }}</HeaderButton
         >
       </li>
     </ul>
   </div>
 </template>
-
 
 <style scoped>
 .HeaderContainer {
@@ -60,4 +59,3 @@ export default {};
   margin-left: auto;
 }
 </style>
-
